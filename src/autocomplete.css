@@ -1,0 +1,43 @@
+div.auto-complete {
+	display: inline-block;
+	position: relative;
+	width: 50%;
+}
+div.auto-complete > input {
+	display: block;
+}
+div.auto-complete > ul {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	min-width: 100%;
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border: 1px solid rgba(0,0,0,.3);
+	background-color: white;
+}
+[hidden] {
+ display: none;
+}
+div.auto-complete > ul[hidden], div.auto-complete > ul:empty {
+	display: none;
+}
+div.auto-complete > ul > li {
+	position: relative;
+	padding: .2em .5em;
+	cursor: pointer;
+	color: black;
+	text-align: left;
+	font-style: normal;
+	font-size: 14px;
+}
+div.auto-complete > ul > li:hover {
+	background: #B8D3E0;
+	color: black;
+}
+div.auto-complete > ul > li[selected="selected"] {
+	background: #3D6D8F;
+	color: white;
+}
